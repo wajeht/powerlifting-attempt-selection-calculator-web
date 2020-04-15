@@ -103,6 +103,7 @@ input[type=button], input[type=submit], input[type=reset] {
   margin-top: 50px;
   margin-bottom: 30px;
   margin-right: 51px;
+  -webkit-appearance: none;
   font-size: small;
 }
 
@@ -239,19 +240,18 @@ input[type=button], input[type=submit], input[type=reset] {
   and (max-width: 414px) 
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
+  input {
+    width: 65px;
+  }
 
-    input {
-      width: 65px;
-    }
-  
-    .main{
-      background-color: white;
-      margin: auto;
-      position: absolute;
-      top: 0%;
-      left: 50%;
-      width: auto;
-      height: 700px;
-      transform: translate(-50%, 0%);
-    }
+  .main {
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: auto;
+    height: 700px;
+    transform: translate(-50%, 0%);
+  }
   }
