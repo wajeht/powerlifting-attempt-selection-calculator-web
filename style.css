@@ -239,17 +239,4 @@ input[type=button], input[type=submit], input[type=reset] {
   input {
     width: 75px;
   }
-
-  .main{
-    width: auto%;
-  } 
-
-  body{
-    background-color: white;
-  }
-
-
-  .footer p{
-    display: none;
-  }
 }
