@@ -246,6 +246,7 @@ td {
 		left: 50%;
 		width: auto;
 		height: 700px;
-		transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    -webkit-appearance: none;
 	}
 }
