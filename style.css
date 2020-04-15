@@ -32,7 +32,8 @@ body{
 }
 .logo {
 	width: 450px;
-	height: auto;
+  height: auto;
+  cursor: pointer;
 }
 .description {
 	font-size: 100%;
