@@ -249,12 +249,10 @@ input[type=button], input[type=submit], input[type=reset] {
     left: 50%;
     width: auto;
     height: 700px;
-  
     transform: translate(-46%, 8%);
-  
-
-
   }
+}
+
   @media only screen 
   and (max-width: 414px) 
     and (max-height: 812px) 
@@ -274,5 +272,5 @@ input[type=button], input[type=submit], input[type=reset] {
       width: auto;
       height: 700px;
       transform: translate(-46%, 8%);
-      }
+    }
   }
