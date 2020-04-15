@@ -235,7 +235,7 @@ input[type=button], input[type=submit], input[type=reset] {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   input {
     width: 75px;
   }
