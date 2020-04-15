@@ -16,53 +16,20 @@ function verifyAllInputs() {
 	var dl_reps = document.forms["form"]["dl_reps"];
 	var dl_weight = document.forms["form"]["dl_weight"];
 	var dl_rpe = document.forms["form"]["dl_rpe"];
-	if (bodyWeight.value == "") {
-        alert_input()		
-		return false;
-	}
-	if (sq_reps.value == "") {
-        alert_input()		
-
-		return false;
-	}
-	if (sq_weight.value == "") {
-        alert_input()		
-
-		return false;
-	}
-	if (sq_rpe.value == "") {
-        alert_input()		
-
-		return false;
-	}
-	if (bn_reps.value == "") {
-        alert_input()		
-		return false;
-	}
-	if (bn_weight.value == "") {
-        alert_input()		
-
-		return false;
-	}
-	if (bn_rpe.value == "") {
-        alert_input()		
-		return false;
-	}
-	if (dl_reps.value == "") {
-        alert_input()		
-		dl_reps.focus();
-		return false;
-	}
-	if (dl_weight.value == "") {
-        alert_input()		
-		dl_weight.focus();
-		return false;
-	}
-	if (dl_rpe.value == "") {
-        alert_input()		
-        dl_rpe.focus();
-		return false;
-	}
+    if (bodyWeight.value == "" || 
+        sq_reps.value == "" ||
+        sq_weight.value == "" ||
+        sq_rpe.value == "" ||
+        bn_reps.value == "" ||
+        bn_weight.value == "" ||
+        bn_rpe.value == "" ||
+        dl_reps.value == "" ||
+        dl_weight.value == "" ||
+        dl_rpe.value == "")
+        {
+            alert_input()		
+            return false;
+        }
 	return true;
 }
 
@@ -73,7 +40,7 @@ function Calculate()
 }
 
 function alert_input(){
-    alertify.confirm('Support', 'Please enter all input fields', 
+    alertify.confirm('Alert', 'Please enter all input fields!', 
     function() {
 	}, function() {
 	});

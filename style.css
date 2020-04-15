@@ -22,8 +22,8 @@ body{
 }
 .middle{
 	width: 100%;
-	position: fixed;
-	margin-top: 50px;
+  position:absolute;
+  margin-top: 50px;
 }
 .logo-container {
 	margin-bottom: 20px;
@@ -38,7 +38,7 @@ body{
 	font-size: 100%;
 	text-align: center;
 	margin-top: 50px;
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .col-label {
 	float: left;
@@ -47,18 +47,18 @@ body{
 	font-size: 13px;
 }
 .col-input {
-	float: right;
-	width: 80%;
+	float: left;
+  width: 80%;
 }
 .row:after {
 	content: "";
 	display: table;
-	clear: both;
+	clear: fixed;
 }
 .row{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+  justify-content: center;
 }
 .calc-button-text{
 	text-align: center;
@@ -172,6 +172,20 @@ td {
 	border-radius: 10px;
 }
 /*-------------------RESULT PAGE STYLE END----------------------*/
+
+
+@media only screen and (min-width: 1440px) {
+	input {
+		width: 210px;
+	}
+}
+
+@media only screen and (min-width: 1340px) {
+	input {
+		width: 155px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	input {
 		width: 108px;
