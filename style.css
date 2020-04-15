@@ -133,10 +133,10 @@ input[type=button], input[type=submit], input[type=reset] {
 	width: auto;
 }
 .footer-image{
-  width: 130px;
+  width: 135px;
   cursor: pointer;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 .footer p{
 	text-align: center;
@@ -233,6 +233,9 @@ td {
 	.col-input {
 		float: right;
 		width: 75%;
+  }
+  .footer-image{
+		width: 110px;
 	}
 }
 @media screen and (max-width: 1050px) {
@@ -246,6 +249,9 @@ td {
 	.col-input {
 		float: right;
 		width: 75%;
+  }
+  .footer-image{
+		width: 110px;
 	}
 }
 @media screen and (max-width: 800px) {
@@ -284,7 +290,7 @@ td {
 		width: 350px;
 	}
 	.footer-image{
-		width: 85px;
+		width: 91px;
 	}
 }
 @media only screen and (max-width: 414px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
