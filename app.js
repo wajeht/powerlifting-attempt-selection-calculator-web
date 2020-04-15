@@ -67,3 +67,11 @@ function verifyAllInputs() {
 	}
 	return true;
 }
+
+
+
+function Calculate()
+{
+    var testBW = document.getElementById("bodyweight").value;
+    localStorage.setItem("bodyweight", testBW);
+}

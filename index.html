@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="middle">
-			<form action="result.html" id="form" method="post" name="form" onsubmit="return verifyAllInputs()">
+			<form action="result.html" id="form" method="GET" name="form" onsubmit="return verifyAllInputs()">
 				<div class="row">
 					<div class="col-label">
 						<label for="bodyweight">GENDER:</label>
@@ -61,7 +61,7 @@
 				</div>
 				<div class="row">
 					<div class="calc-button-text">
-						<input name="Submit" type="submit" value="CALCULATE">
+						<input name="Submit" type="submit" value="CALCULATE" onclick="Calculate()">
 					</div>
 				</div>
 			</form>

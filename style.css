@@ -234,7 +234,7 @@ td {
 		width: 95px;
 	}
 }
-@media only screenand (max-width: 414px)and (orientation: portrait)and (-webkit-min-device-pixel-ratio: 2) {
+@media only screenand (max-width: 414px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 	input {
 		width: 65px;
 	}
