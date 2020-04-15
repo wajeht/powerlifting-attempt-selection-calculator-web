@@ -252,6 +252,6 @@ input[type=button], input[type=submit], input[type=reset] {
       left: 50%;
       width: auto;
       height: 700px;
-      transform: translate(-46%, 8%);
+      transform: translate(-50%, 2%);
     }
   }
