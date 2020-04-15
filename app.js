@@ -1,5 +1,7 @@
 function about() {
-	alertify.confirm('a callback will be invoked on ok.').set('onok', function(closeEvent) {
+    alertify.confirm('This website is free forever, but it will take effort to maintain it. Wanna buy me a coup of coffee?')
+    .set('closable', false)
+    .set('onok', function(closeEvent) {
 		window.location.href = "https://www.paypal.me/akonyein/";
 	});
 }
