@@ -102,6 +102,7 @@ input[type=button], input[type=submit], input[type=reset] {
   display: inline-block;
   margin-top: 50px;
   margin-bottom: 30px;
+  margin-right: 51px;
   font-size: small;
 }
 
