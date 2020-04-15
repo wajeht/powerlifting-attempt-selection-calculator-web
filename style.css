@@ -141,6 +141,12 @@ input[type=button], input[type=submit], input[type=reset] {
 .footer p{
 	text-align: center;
 }
+.alertify .ajs-dialog {
+    top: 25%;
+    transform: translateY(-25%);
+	margin: auto;
+	autoReset:false;
+}
 /*-------------------RESULT PAGE STYLE START--------------------*/
 caption {
 	background-color: #C82C33;

@@ -45,3 +45,4 @@ function alert_input(){
 	}, function() {
 	});
 }
+
