@@ -145,7 +145,6 @@ input[type=button], input[type=submit], input[type=reset] {
     top: 25%;
     transform: translateY(-25%);
 	margin: auto;
-	autoReset:false;
 }
 /*-------------------RESULT PAGE STYLE START--------------------*/
 caption {
