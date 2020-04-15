@@ -256,5 +256,41 @@ input[type=button], input[type=submit], input[type=reset] {
 
   }
 
+  @supports (-webkit-touch-callout: none) {
+    input {
+      width: 76px;
+    }
+  
+    .main{
+  
+      background-color: white;
+      margin: auto;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      width: auto;
+      height: 700px;
+    
+      transform: translate(-46%, 8%);
+      }
+  
+  @supports not (-webkit-touch-callout: none) {
+    input {
+      width: 76px;
+    }
+  
+    .main{
+  
+      background-color: white;
+      margin: auto;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      width: auto;
+      height: 700px;
+    
+      transform: translate(-46%, 8%);
+      }
+
 
 }
