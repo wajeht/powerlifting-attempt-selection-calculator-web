@@ -241,7 +241,7 @@ input[type=button], input[type=submit], input[type=reset] {
   and (-webkit-min-device-pixel-ratio: 2) {
 
     input {
-      width: 76px;
+      width: 65px;
     }
   
     .main{
