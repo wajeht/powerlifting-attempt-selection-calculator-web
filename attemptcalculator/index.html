@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attempt Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="top">
+                <div class="logo-container">            
+                    <img src="./images/logo.png" alt="logo" class="logo" onclick="verifyAllInputs()" method="post">
+                </div>
+                <div class="description">
+                    <p>Be as objective as possible. Enter the heaviest weight lifted within past 1-2 weeks below!</p>
+                </div>
+            </div>
+
+            <div class="middle">
+                <form name="form" action="/validate.php" onsubmit="return verifyAllInputs()" method="post">
+                    <div class="row">
+                        <div class="col-label">
+                            <label for="bodyweight">GENDER:</label>
+                        </div>
+                        <div class="col-input">
+                            <div class="radio">
+                                <input type="radio" id="male" name="gender" value="male" checked="checked"><label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-label"><label for="bodyweight">BODYWEIGHT:</label></div>
+                        <div class="col-input"><input type="number" id="bodyweight" name="bodyweight" placeholder="lbs"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label"><label for="bench">SQUAT:</label></div>
+                        <div class="col-input"><input type="number" name="sq_reps"  placeholder="reps"/>    <input type="number" name="sq_weight"  placeholder="weight"/>    <input type="number" name="sq_rpe"  placeholder="rpe"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label"><label for="bench">BENCH:</label></div>
+                        <div class="col-input"><input type="number" name="bn_reps"  placeholder="reps"/>    <input type="number" name="bn_weight"  placeholder="weight"/>    <input type="number" name="bn_rpe"  placeholder="rpe"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-label"><label for="bench">DEADLIFT:</label></div>
+                        <div class="col-input"><input type="number" name="dl_reps"  placeholder="reps"/>    <input type="number" name="dl_weight"  placeholder="weight"/>    <input type="number" name="dl_rpe"  placeholder="rpe"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="calc-button-text"> <input type="submit" name="Submit" value="CALCULATE"></div>
+                    </div>
+                </form>
+            </div>
+              <div class="footer">
+                <p>Clike below for mobile!</p>
+                <a href="https://play.google.com/store/apps/details?id=com.jawstrength.powerliftingattemptselectioncalculator"><img src="/images/googleplay.png" class="footer-image" alt="Get it on google play"></a>
+                  <img src="/images/apple.png" class="footer-image" alt="Download on the App Store">
+            </div>
+
+        </div>
+        
+  
+    </body>
+</html>
