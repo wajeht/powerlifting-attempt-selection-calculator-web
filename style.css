@@ -233,3 +233,22 @@ input[type=button], input[type=submit], input[type=reset] {
     width: 95px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  input {
+    width: 75px;
+  }
+
+  .main{
+    width: auto%;
+  } 
+
+  body{
+    background-color: white;
+  }
+
+
+  .footer p{
+    display: none;
+  }
+}
