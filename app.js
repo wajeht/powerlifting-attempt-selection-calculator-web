@@ -1,7 +1,7 @@
 function about() {
-	if (confirm("This website is free forever. But it still cost a good amount of effort to maintain it. Do you want to buy me a coup of coffee?")) {
-		window.location.href = "https://www.paypal.me/akonyein/"
-	}
+	alertify.confirm('a callback will be invoked on ok.').set('onok', function(closeEvent) {
+		window.location.href = "https://www.paypal.me/akonyein/";
+	});
 }
 
 function verifyAllInputs() {
