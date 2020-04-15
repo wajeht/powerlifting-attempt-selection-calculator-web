@@ -237,6 +237,24 @@ input[type=button], input[type=submit], input[type=reset] {
 
 @media screen and (max-width: 375px) {
   input {
-    width: 75px;
+    width: 76px;
   }
+
+  .main{
+
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: auto;
+    height: 700px;
+  
+    transform: translate(-46%, 8%);
+  
+
+
+  }
+
+
 }
