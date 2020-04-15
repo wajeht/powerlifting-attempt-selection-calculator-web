@@ -1,8 +1,7 @@
 function about() {
-    alertify.confirm('This website is free forever, but it will take effort to maintain it. Wanna buy me a coup of coffee?')
-    .set('closable', false)
-    .set('onok', function(closeEvent) {
+	alertify.confirm('Support', 'This web applicatoin is free forever, but it still cost effort to maintain it on AppStore. Want to buy me a cup of coffee?', function(closeEvent) {
 		window.location.href = "https://www.paypal.me/akonyein/";
+	}, function() {
 	});
 }
 
@@ -18,53 +17,50 @@ function verifyAllInputs() {
 	var dl_weight = document.forms["form"]["dl_weight"];
 	var dl_rpe = document.forms["form"]["dl_rpe"];
 	if (bodyWeight.value == "") {
-		window.alert("Please enter all input fields!");
-		bodyWeight.focus();
+        alert_input()		
 		return false;
 	}
 	if (sq_reps.value == "") {
-		window.alert("Please enter all input fields!");
-		sq_reps.focus();
+        alert_input()		
+
 		return false;
 	}
 	if (sq_weight.value == "") {
-		window.alert("Please enter all input fields!");
-		sq_weight.focus();
+        alert_input()		
+
 		return false;
 	}
 	if (sq_rpe.value == "") {
-		window.alert("Please enter all input fields!");
-		sq_rpe.focus();
+        alert_input()		
+
 		return false;
 	}
 	if (bn_reps.value == "") {
-		window.alert("Please enter all input fields!");
-		bn_reps.focus();
+        alert_input()		
 		return false;
 	}
 	if (bn_weight.value == "") {
-		window.alert("Please enter all input fields!");
-		bn_weight.focus();
+        alert_input()		
+
 		return false;
 	}
 	if (bn_rpe.value == "") {
-		window.alert("Please enter all input fields!");
-		bn_rpe.focus();
+        alert_input()		
 		return false;
 	}
 	if (dl_reps.value == "") {
-		window.alert("Please enter all input fields!");
+        alert_input()		
 		dl_reps.focus();
 		return false;
 	}
 	if (dl_weight.value == "") {
-		window.alert("Please enter all input fields!");
+        alert_input()		
 		dl_weight.focus();
 		return false;
 	}
 	if (dl_rpe.value == "") {
-		window.alert("Please enter all input fields!");
-		dl_rpe.focus();
+        alert_input()		
+        dl_rpe.focus();
 		return false;
 	}
 	return true;
@@ -74,4 +70,11 @@ function Calculate()
 {
     var testBW = document.getElementById("bodyweight").value;
     localStorage.setItem("bodyweight", testBW);
+}
+
+function alert_input(){
+    alertify.confirm('Support', 'Please enter all input fields', 
+    function() {
+	}, function() {
+	});
 }
