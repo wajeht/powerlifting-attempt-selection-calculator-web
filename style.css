@@ -258,11 +258,10 @@ input[type=button], input[type=submit], input[type=reset] {
 
   @supports (-webkit-touch-callout: none) {
     input {
-      width: 76px;
+      width: 50px;
     }
   
     .main{
-  
       background-color: white;
       margin: auto;
       position: absolute;
@@ -270,17 +269,15 @@ input[type=button], input[type=submit], input[type=reset] {
       left: 50%;
       width: auto;
       height: 700px;
-    
       transform: translate(-46%, 8%);
       }
   
   @supports not (-webkit-touch-callout: none) {
     input {
-      width: 76px;
+      width: 50px;
     }
   
     .main{
-  
       background-color: white;
       margin: auto;
       position: absolute;
@@ -288,9 +285,6 @@ input[type=button], input[type=submit], input[type=reset] {
       left: 50%;
       width: auto;
       height: 700px;
-    
       transform: translate(-46%, 8%);
       }
-
-
 }
