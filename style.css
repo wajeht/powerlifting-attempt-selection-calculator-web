@@ -255,8 +255,12 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
   }
+  @media only screen 
+  and (max-width: 414px) 
+    and (max-height: 812px) 
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
-  @supports (-webkit-touch-callout: none) {
     input {
       width: 50px;
     }
@@ -271,20 +275,4 @@ input[type=button], input[type=submit], input[type=reset] {
       height: 700px;
       transform: translate(-46%, 8%);
       }
-  
-  @supports not (-webkit-touch-callout: none) {
-    input {
-      width: 50px;
-    }
-  
-    .main{
-      background-color: white;
-      margin: auto;
-      position: absolute;
-      top: 0%;
-      left: 50%;
-      width: auto;
-      height: 700px;
-      transform: translate(-46%, 8%);
-      }
-}
+  }
