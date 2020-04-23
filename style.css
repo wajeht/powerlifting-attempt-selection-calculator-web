@@ -317,6 +317,19 @@ td {
     width: 65px;
   }
 
+  .main-result {
+    width: 350px;
+  }
+
+  .main-result {
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 2.5%);
+    -webkit-appearance: none;
+  }
+
   .main {
     background-color: white;
     margin: auto;
@@ -325,7 +338,7 @@ td {
     left: 50%;
     width: auto;
     height: 700px;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 2.5%);
     -webkit-appearance: none;
   }
 }
