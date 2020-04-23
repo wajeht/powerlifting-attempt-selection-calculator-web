@@ -46,6 +46,9 @@ body {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+.white-out {
+  color: white;
+}
 .col-label {
   float: left;
   width: 20%;
