@@ -30,6 +30,22 @@ function savaData() {
   localStorage.setItem("sq_weight", sq_weight.value);
   var sq_rpe = document.getElementById("sq_rpe");
   localStorage.setItem("sq_rpe", sq_rpe.value);
+
+  // bench one rep max
+  var bn_reps = document.getElementById("bn_reps");
+  localStorage.setItem("bn_reps", bn_reps.value);
+  var bn_weight = document.getElementById("bn_weight");
+  localStorage.setItem("bn_weight", bn_weight.value);
+  var bn_rpe = document.getElementById("bn_rpe");
+  localStorage.setItem("bn_rpe", bn_rpe.value);
+
+  // deadlift one rep max
+  var dl_reps = document.getElementById("dl_reps");
+  localStorage.setItem("dl_reps", dl_reps.value);
+  var dl_weight = document.getElementById("dl_weight");
+  localStorage.setItem("dl_weight", dl_weight.value);
+  var dl_rpe = document.getElementById("dl_rpe");
+  localStorage.setItem("dl_rpe", dl_rpe.value);
 }
 
 function loadData() {
@@ -48,6 +64,24 @@ function loadData() {
       parseInt(localStorage.getItem("sq_reps")),
       parseInt(localStorage.getItem("sq_weight")),
       parseInt(localStorage.getItem("sq_rpe"))
+    );
+
+  // squat one rep max
+  document.getElementById("bn_1RM").innerHTML =
+    "BENCH e1RM: " +
+    oneRepMax(
+      parseInt(localStorage.getItem("bn_reps")),
+      parseInt(localStorage.getItem("bn_weight")),
+      parseInt(localStorage.getItem("bn_rpe"))
+    );
+
+  // squat one rep max
+  document.getElementById("dl_1RM").innerHTML =
+    "DEADLIFT e1RM: " +
+    oneRepMax(
+      parseInt(localStorage.getItem("dl_reps")),
+      parseInt(localStorage.getItem("dl_weight")),
+      parseInt(localStorage.getItem("dl_rpe"))
     );
 }
 
