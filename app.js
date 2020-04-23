@@ -1,3 +1,56 @@
+function oneRepMax(rep, weight, rpe) {
+  return weight * (10 - (rpe + 1) + rep) * 0.03 + weight;
+}
+
+function firstAttempt(oneRepMax) {
+  return int(oneRepMax * 0.91);
+}
+
+function secondAttempt(oneRepMax) {
+  return int(oneRepMax * 0.91);
+}
+
+function thirdAttempt(oneRepMax) {
+  return int(oneRepMax * 0.91);
+}
+
+function savaData() {
+  // bodyweight
+  var bodyWeight = document.getElementById("bodyweight");
+  localStorage.setItem("bodyweight", bodyWeight.value);
+
+  // gender
+  var gender = document.querySelector('input[name = "gender"]:checked');
+  localStorage.setItem("gender", gender.value);
+
+  // squat one rep max
+  var sq_reps = document.getElementById("sq_reps");
+  localStorage.setItem("sq_reps", sq_reps.value);
+  var sq_weight = document.getElementById("sq_weight");
+  localStorage.setItem("sq_weight", sq_weight.value);
+  var sq_rpe = document.getElementById("sq_rpe");
+  localStorage.setItem("sq_rpe", sq_rpe.value);
+}
+
+function loadData() {
+  // bodyweight
+  document.getElementById("bodyweight").innerHTML = localStorage.getItem(
+    "bodyweight"
+  );
+
+  // gender
+  document.getElementById("gender").innerHTML = localStorage.getItem("gender");
+
+  // squat one rep max
+  document.getElementById("sq_1RM").innerHTML =
+    "SQUAT e1RM: " +
+    oneRepMax(
+      parseInt(localStorage.getItem("sq_reps")),
+      parseInt(localStorage.getItem("sq_weight")),
+      parseInt(localStorage.getItem("sq_rpe"))
+    );
+}
+
 function about() {
   alertify.confirm(
     "Support",
@@ -36,26 +89,6 @@ function verifyAllInputs() {
     return false;
   }
   return true;
-}
-
-function savaData() {
-  // bodyweight
-  var bodyWeight = document.getElementById("bodyweight");
-  localStorage.setItem("bodyweight", bodyWeight.value);
-
-  // gender
-  var gender = document.querySelector('input[name = "gender"]:checked');
-  localStorage.setItem("gender", gender.value);
-}
-
-function loadData() {
-  // bodyweight
-  document.getElementById("bodyweight").innerHTML = localStorage.getItem(
-    "bodyweight"
-  );
-
-  // gender
-  document.getElementById("gender").innerHTML = localStorage.getItem("gender");
 }
 
 function alert_input() {
