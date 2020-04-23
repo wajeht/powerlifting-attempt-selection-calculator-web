@@ -280,6 +280,9 @@ td {
   .footer-image {
     width: 110px;
   }
+  .main-result {
+    width: 458px;
+  }
 }
 @media screen and (max-width: 600px) {
   .col-label {
@@ -290,6 +293,11 @@ td {
     float: right;
     width: 75%;
   }
+
+  .main-result {
+    width: 350px;
+  }
+
   input {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -308,6 +316,7 @@ td {
   input {
     width: 65px;
   }
+
   .main {
     background-color: white;
     margin: auto;
