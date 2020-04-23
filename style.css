@@ -248,6 +248,9 @@ td {
   .footer-image {
     width: 110px;
   }
+  .main-result {
+    width: 458px;
+  }
 }
 @media screen and (max-width: 1050px) {
   input {
@@ -263,6 +266,9 @@ td {
   }
   .footer-image {
     width: 110px;
+  }
+  .main-result {
+    width: 458px;
   }
 }
 @media screen and (max-width: 800px) {
