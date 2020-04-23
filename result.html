@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
 	<script src="app.js"></script>
 </head>
-<body>
+<body onload="loadData()"></body>
 	<div class="main-result">
 		<div class="table-container">
 			<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
@@ -32,9 +32,9 @@
 					</tr>
 					<tr>
 						<th data-label="-" scope="row">1st attempt:</th>
-						<td>000</td>
-						<td>000</td>
-						<td>000</td>
+						<td><div id="sq1_low">000</div></td>
+						<td><div id="sq1_Normal">000</div></td>
+						<td><div id="sq1_High">000</div></td>
 					</tr>
 					<tr>
 						<th data-label="-" scope="row">2nd attempt:</th>

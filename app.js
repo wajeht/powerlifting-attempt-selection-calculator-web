@@ -38,9 +38,15 @@ function verifyAllInputs() {
   return true;
 }
 
-function Calculate() {
-  var testBW = document.getElementById("bodyweight").value;
-  localStorage.setItem("bodyweight", testBW);
+function savaData() {
+  var bodyWeight = document.getElementById("bodyweight");
+  localStorage.setItem("bodyweight", bodyWeight.value);
+}
+
+function loadData() {
+  document.getElementById("sq1_low").innerHTML = localStorage.getItem(
+    "bodyweight"
+  );
 }
 
 function alert_input() {
