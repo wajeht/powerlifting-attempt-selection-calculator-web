@@ -326,7 +326,7 @@ td {
     position: absolute;
     top: 0%;
     left: 50%;
-    transform: translate(-50%, 2.5%);
+    transform: translate(-50%, 1.5%);
     -webkit-appearance: none;
   }
 
@@ -338,7 +338,7 @@ td {
     left: 50%;
     width: auto;
     height: 700px;
-    transform: translate(-50%, 2.5%);
+    transform: translate(-50%, 1.5%);
     -webkit-appearance: none;
   }
 }
