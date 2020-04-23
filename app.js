@@ -39,14 +39,23 @@ function verifyAllInputs() {
 }
 
 function savaData() {
+  // bodyweight
   var bodyWeight = document.getElementById("bodyweight");
   localStorage.setItem("bodyweight", bodyWeight.value);
+
+  // gender
+  var gender = document.querySelector('input[name = "gender"]:checked');
+  localStorage.setItem("gender", gender.value);
 }
 
 function loadData() {
-  document.getElementById("sq1_low").innerHTML = localStorage.getItem(
+  // bodyweight
+  document.getElementById("bodyweight").innerHTML = localStorage.getItem(
     "bodyweight"
   );
+
+  // gender
+  document.getElementById("gender").innerHTML = localStorage.getItem("gender");
 }
 
 function alert_input() {
