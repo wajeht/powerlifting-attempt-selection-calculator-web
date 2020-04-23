@@ -3,15 +3,15 @@ function oneRepMax(rep, weight, rpe) {
 }
 
 function firstAttempt(oneRepMax) {
-  return int(oneRepMax * 0.91);
+  return parseInt(oneRepMax * 0.91);
 }
 
 function secondAttempt(oneRepMax) {
-  return int(oneRepMax * 0.91);
+  return parseInt(oneRepMax * 0.96);
 }
 
 function thirdAttempt(oneRepMax) {
-  return int(oneRepMax * 0.91);
+  return oneRepMax;
 }
 
 function savaData() {
@@ -58,31 +58,124 @@ function loadData() {
   document.getElementById("gender").innerHTML = localStorage.getItem("gender");
 
   // squat one rep max
-  document.getElementById("sq_1RM").innerHTML =
-    "SQUAT e1RM: " +
-    oneRepMax(
-      parseInt(localStorage.getItem("sq_reps")),
-      parseInt(localStorage.getItem("sq_weight")),
-      parseInt(localStorage.getItem("sq_rpe"))
-    );
+  var sq_1RM = oneRepMax(
+    parseInt(localStorage.getItem("sq_reps")),
+    parseInt(localStorage.getItem("sq_weight")),
+    parseInt(localStorage.getItem("sq_rpe"))
+  );
+  document.getElementById("sq_1RM").innerHTML = "SQUAT e1RM: " + sq_1RM;
 
-  // squat one rep max
-  document.getElementById("bn_1RM").innerHTML =
-    "BENCH e1RM: " +
-    oneRepMax(
-      parseInt(localStorage.getItem("bn_reps")),
-      parseInt(localStorage.getItem("bn_weight")),
-      parseInt(localStorage.getItem("bn_rpe"))
-    );
+  // declaring attempt
+  var sq1_attempt = firstAttempt(sq_1RM);
+  var sq2_attempt = secondAttempt(sq_1RM);
+  var sq3_attempt = thirdAttempt(sq_1RM);
 
-  // squat one rep max
-  document.getElementById("dl_1RM").innerHTML =
-    "DEADLIFT e1RM: " +
-    oneRepMax(
-      parseInt(localStorage.getItem("dl_reps")),
-      parseInt(localStorage.getItem("dl_weight")),
-      parseInt(localStorage.getItem("dl_rpe"))
-    );
+  // squat low
+  document.getElementById("sq1_low").innerHTML = parseInt(
+    sq1_attempt - sq1_attempt * 0.01
+  );
+  document.getElementById("sq1_Normal").innerHTML = sq1_attempt;
+  document.getElementById("sq1_High").innerHTML = parseInt(
+    sq1_attempt + sq1_attempt * 0.02
+  );
+
+  // squat normal
+  document.getElementById("sq2_low").innerHTML = parseInt(
+    sq2_attempt - sq2_attempt * 0.01
+  );
+  document.getElementById("sq2_Normal").innerHTML = sq2_attempt;
+  document.getElementById("sq2_High").innerHTML = parseInt(
+    sq2_attempt + sq2_attempt * 0.02
+  );
+
+  //squat high
+  document.getElementById("sq3_low").innerHTML = parseInt(
+    sq3_attempt - sq3_attempt * 0.01
+  );
+  document.getElementById("sq3_Normal").innerHTML = sq3_attempt;
+  document.getElementById("sq3_High").innerHTML = parseInt(
+    sq3_attempt + sq3_attempt * 0.02
+  );
+
+  // bench one rep max
+  var bn_1RM = oneRepMax(
+    parseInt(localStorage.getItem("bn_reps")),
+    parseInt(localStorage.getItem("bn_weight")),
+    parseInt(localStorage.getItem("bn_rpe"))
+  );
+  document.getElementById("bn_1RM").innerHTML = "SQUAT e1RM: " + bn_1RM;
+
+  // declaring bench attempt
+  var bn1_attempt = firstAttempt(bn_1RM);
+  var bn2_attempt = secondAttempt(bn_1RM);
+  var bn3_attempt = thirdAttempt(bn_1RM);
+
+  // bench low
+  document.getElementById("bn1_low").innerHTML = parseInt(
+    bn1_attempt - bn1_attempt * 0.01
+  );
+  document.getElementById("bn1_Normal").innerHTML = bn1_attempt;
+  document.getElementById("bn1_High").innerHTML = parseInt(
+    bn1_attempt + bn1_attempt * 0.02
+  );
+
+  // bench normal
+  document.getElementById("bn2_low").innerHTML = parseInt(
+    bn2_attempt - bn2_attempt * 0.01
+  );
+  document.getElementById("bn2_Normal").innerHTML = bn2_attempt;
+  document.getElementById("bn2_High").innerHTML = parseInt(
+    bn2_attempt + bn2_attempt * 0.02
+  );
+
+  // bench high
+  document.getElementById("bn3_low").innerHTML = parseInt(
+    bn3_attempt - bn3_attempt * 0.01
+  );
+  document.getElementById("bn3_Normal").innerHTML = bn3_attempt;
+  document.getElementById("bn3_High").innerHTML = parseInt(
+    bn3_attempt + bn3_attempt * 0.02
+  );
+
+  // deadlift one rep max
+  var dl_1RM = oneRepMax(
+    parseInt(localStorage.getItem("dl_reps")),
+    parseInt(localStorage.getItem("dl_weight")),
+    parseInt(localStorage.getItem("dl_rpe"))
+  );
+  document.getElementById("dl_1RM").innerHTML = "SQUAT e1RM: " + dl_1RM;
+
+  // declaring deadlift attempt
+  var dl1_attempt = firstAttempt(dl_1RM);
+  var dl2_attempt = secondAttempt(dl_1RM);
+  var dl3_attempt = thirdAttempt(dl_1RM);
+
+  // deadlift low
+  document.getElementById("dl1_low").innerHTML = parseInt(
+    dl1_attempt - dl1_attempt * 0.01
+  );
+  document.getElementById("dl1_Normal").innerHTML = dl1_attempt;
+  document.getElementById("dl1_High").innerHTML = parseInt(
+    dl1_attempt + dl1_attempt * 0.02
+  );
+
+  // deadlift normal
+  document.getElementById("dl2_low").innerHTML = parseInt(
+    dl2_attempt - dl2_attempt * 0.01
+  );
+  document.getElementById("dl2_Normal").innerHTML = dl2_attempt;
+  document.getElementById("dl2_High").innerHTML = parseInt(
+    dl2_attempt + dl2_attempt * 0.02
+  );
+
+  //deadlift high
+  document.getElementById("dl3_low").innerHTML = parseInt(
+    dl3_attempt - dl3_attempt * 0.01
+  );
+  document.getElementById("dl3_Normal").innerHTML = dl3_attempt;
+  document.getElementById("dl3_High").innerHTML = parseInt(
+    dl3_attempt + dl3_attempt * 0.02
+  );
 }
 
 function about() {
