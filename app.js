@@ -11,7 +11,7 @@ function secondAttempt(oneRepMax) {
 }
 
 function thirdAttempt(oneRepMax) {
-  return oneRepMax;
+  return parseInt(oneRepMax);
 }
 
 function savaData() {
