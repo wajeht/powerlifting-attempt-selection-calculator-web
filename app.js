@@ -1,6 +1,24 @@
+var sq_list = [];
+
+function showTotal() {
+    var sq_max = 0;
+
+    for (i = 0; i < sq_list.length; i++) {
+        sq_max += sq_list[i];
+    }
+
+    document.getElementById("total").innerHTML = sq_max;
+}
+
 function select_sq1_low(item) {
     item.style.backgroundColor = "#c82c33";
     item.style.color = "white";
+
+    var one = parseInt(document.getElementById("sq1_low").innerHTML);
+    alert(one);
+
+    sq_list.push(one);
+    showTotal();
 }
 
 function unselected_sq1_low(item) {
