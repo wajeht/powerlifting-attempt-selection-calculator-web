@@ -1,49 +1,702 @@
-var sq_list = [];
+var total = [];
 
 function showTotal() {
-    var sq_max = 0;
-
-    for (i = 0; i < sq_list.length; i++) {
-        sq_max += sq_list[i];
+    var max = 0;
+    for (i = 0; i < total.length; i++) {
+        max += total[i];
     }
 
-    document.getElementById("total").innerHTML = sq_max;
+    document.getElementById("total").innerHTML = max;
 }
 
+// squat one --------------------------------------------------------------------
 function select_sq1_low(item) {
     item.style.backgroundColor = "#c82c33";
     item.style.color = "white";
 
-    var one = parseInt(document.getElementById("sq1_low").innerHTML);
-    alert(one);
-
-    sq_list.push(one);
+    // add to squat_list
+    var oneLow = parseInt(document.getElementById("sq1_low").innerHTML);
+    total.push(oneLow);
     showTotal();
 }
 
 function unselected_sq1_low(item) {
     item.style.backgroundColor = "#fff";
     item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("sq1_low").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
 }
 
 function select_sq1_Normal(item) {
     item.style.backgroundColor = "#c82c33";
     item.style.color = "white";
+
+    // add to squat_list
+    var oneLow = parseInt(document.getElementById("sq1_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
 }
 
 function unselected_sq1_Normal(item) {
     item.style.backgroundColor = "#fff";
     item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("sq1_Normal").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
 }
 
 function select_sq1_High(item) {
     item.style.backgroundColor = "#c82c33";
     item.style.color = "white";
+
+    // add to squat_list
+    var oneHigh = parseInt(document.getElementById("sq1_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
 }
 
 function unselected_sq1_High(item) {
     item.style.backgroundColor = "#fff";
     item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("sq1_High").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// squat two --------------------------------------------------------------------------------------------------
+
+function select_sq2_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to squat_list
+    var oneLow = parseInt(document.getElementById("sq2_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_sq2_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("sq2_low").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_sq2_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to squat_list
+    var oneLow = parseInt(document.getElementById("sq2_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_sq2_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("sq2_Normal").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_sq2_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to squat_list
+    var oneHigh = parseInt(document.getElementById("sq2_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_sq2_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("sq2_High").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// squat three ---------------------------------------------------------------------------------------
+
+function select_sq3_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to squat_list
+    var oneLow = parseInt(document.getElementById("sq3_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_sq3_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("sq3_low").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_sq3_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to squat_list
+    var oneLow = parseInt(document.getElementById("sq3_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_sq3_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("sq3_Normal").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_sq3_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to squat_list
+    var oneHigh = parseInt(document.getElementById("sq3_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_sq3_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("sq3_High").innerHTML);
+
+    // remove from squat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// bnuat one --------------------------------------------------------------------
+function select_bn1_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneLow = parseInt(document.getElementById("bn1_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_bn1_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("bn1_low").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_bn1_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneLow = parseInt(document.getElementById("bn1_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_bn1_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("bn1_Normal").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_bn1_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneHigh = parseInt(document.getElementById("bn1_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_bn1_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("bn1_High").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// bnuat two --------------------------------------------------------------------------------------------------
+
+function select_bn2_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneLow = parseInt(document.getElementById("bn2_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_bn2_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("bn2_low").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_bn2_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneLow = parseInt(document.getElementById("bn2_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_bn2_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("bn2_Normal").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_bn2_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneHigh = parseInt(document.getElementById("bn2_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_bn2_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("bn2_High").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// bnuat three ---------------------------------------------------------------------------------------
+
+function select_bn3_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneLow = parseInt(document.getElementById("bn3_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_bn3_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("bn3_low").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_bn3_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneLow = parseInt(document.getElementById("bn3_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_bn3_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("bn3_Normal").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_bn3_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to bnuat_list
+    var oneHigh = parseInt(document.getElementById("bn3_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_bn3_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("bn3_High").innerHTML);
+
+    // remove from bnuat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// dluat one --------------------------------------------------------------------
+function select_dl1_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneLow = parseInt(document.getElementById("dl1_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_dl1_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("dl1_low").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_dl1_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneLow = parseInt(document.getElementById("dl1_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_dl1_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("dl1_Normal").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_dl1_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneHigh = parseInt(document.getElementById("dl1_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_dl1_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("dl1_High").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// dluat two --------------------------------------------------------------------------------------------------
+
+function select_dl2_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneLow = parseInt(document.getElementById("dl2_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_dl2_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("dl2_low").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_dl2_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneLow = parseInt(document.getElementById("dl2_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_dl2_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("dl2_Normal").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_dl2_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneHigh = parseInt(document.getElementById("dl2_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_dl2_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("dl2_High").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+// dluat three ---------------------------------------------------------------------------------------
+
+function select_dl3_low(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneLow = parseInt(document.getElementById("dl3_low").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_dl3_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneLow = parseInt(document.getElementById("dl3_low").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneLow) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_dl3_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneLow = parseInt(document.getElementById("dl3_Normal").innerHTML);
+    total.push(oneLow);
+    showTotal();
+}
+
+function unselected_dl3_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneNormal = parseInt(document.getElementById("dl3_Normal").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneNormal) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
+}
+
+function select_dl3_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+
+    // add to dluat_list
+    var oneHigh = parseInt(document.getElementById("dl3_High").innerHTML);
+    total.push(oneHigh);
+    showTotal();
+}
+
+function unselected_dl3_High(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+
+    var oneHigh = parseInt(document.getElementById("dl3_High").innerHTML);
+
+    // remove from dluat_list
+    for (var i = 0; i < total.length; i++) {
+        if (total[i] === oneHigh) {
+            total.splice(i, 1);
+        }
+    }
+    showTotal();
 }
 
 function oneRepMax(rep, weight, rpe) {

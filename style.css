@@ -52,7 +52,13 @@ body {
 
 .sq_1st_attempt,
 .sq_2nd_attempt,
-.sq_3rd_attempt {
+.sq_3rd_attempt,
+.bn_1st_attempt,
+.bn_2nd_attempt,
+.bn_3rd_attempt,
+.dl_1st_attempt,
+.dl_2nd_attempt,
+.dl_3rd_attempt {
     cursor: pointer;
     border-radius: 10px;
 }
