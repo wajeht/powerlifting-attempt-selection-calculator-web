@@ -8,13 +8,17 @@ This website is designed to take your heaviest lift within 1-2 weeks before the 
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+I built this website intending to share the strategies for selecting attempts for powerlifters. For those of you who could not afford for coaching and some of the athletes that I coach for powerlifting.
 
 ## How to use?
 
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+Enter the heaviest weight lifted within past 1-2 weeks. I would recommand the heaviest single you hit a week out before meet. If you hit and half rpe, for example. squat: x1@8.5, I would recommand you to put x1@9 instead. It is better to move up a half rpe for accuracy. If you do not know whether your singles, are you can enter the heaviest weight lifted with certain reps.
+
+The less reps close to singles, are the better for accurate prediction. After that, you can autoregulate attempts based on how you feel on meet day. I laied out low, normal, and high. It is pretty self explainatory.
 
 ## Tech/framework used
+
+Everything was built using native technoloy. No frameworks!
 
 -   Javascript
 -   HTML
@@ -22,11 +26,13 @@ If people like your project they’ll want to learn how they can use it. To do s
 
 ## Contribute
 
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
+Let me know if you would contribute into this projects.
 
 ## Credits
 
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.
+I was inspired by the guides for a perfect attempt selectoin based on the guidelines of usapl coach Matt Garry.
+
+[Matt Garry](https://www.supremesportspt.com/coaches/matt-gary)
 
 ## License
 
