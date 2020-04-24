@@ -1,13 +1,29 @@
-var sq_1st_attempt = document.getElementsByClassName("sq_1st_attempt");
-var sq_2nd_attempt = document.getElementsByClassName("sq_2nd_attempt");
-var sq_3rd_attempt = document.getElementsByClassName("sq_3rd_attempt");
-
-function selected(item) {
+function select_sq1_low(item) {
     item.style.backgroundColor = "#c82c33";
     item.style.color = "white";
 }
 
-function unselected(item) {
+function unselected_sq1_low(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+}
+
+function select_sq1_Normal(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+}
+
+function unselected_sq1_Normal(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+}
+
+function select_sq1_High(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+}
+
+function unselected_sq1_High(item) {
     item.style.backgroundColor = "#fff";
     item.style.color = "black";
 }
