@@ -14,13 +14,6 @@ A short description of the motivation behind the creation and maintenance of the
 
 If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 
-## Build status
-
-Build status of continus integration i.e. travis, appveyor etc. Ex. -
-
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
 ## Tech/framework used
 
 -   Javascript
