@@ -1,4 +1,6 @@
 var total = [];
+var bw = parseInt(localStorage.getItem("bodyweight"));
+var swilks = wilks(bw);
 
 function showTotal() {
     var max = 0;
@@ -7,6 +9,34 @@ function showTotal() {
     }
 
     document.getElementById("total").innerHTML = max;
+
+    return max;
+}
+
+function wilks(bw) {
+    var result = 0;
+    // gender
+    if (localStorage.getItem("gender") == "Male") {
+        result =
+            500 /
+            (-216.0475144 +
+                16.2606339 * bw -
+                0.002388645 * Math.pow(bw, 2) -
+                0.00113732 * Math.pow(bw, 3) +
+                0.00000701863 * Math.pow(bw, 4) -
+                0.00000001291 * Math.pow(bw, 5));
+    } else if (localStorage.getItem("gender") == "Female") {
+        result =
+            500 /
+            (594.31747775582 -
+                27.23842536447 * bw +
+                0.82112226871 * Math.pow(bw, 2) -
+                0.00930733913 * Math.pow(bw, 3) +
+                0.00004731582 * Math.pow(bw, 4) -
+                0.00000009054 * Math.pow(bw, 5));
+    }
+
+    return result;
 }
 
 // squat one --------------------------------------------------------------------
@@ -18,6 +48,8 @@ function select_sq1_low(item) {
     var oneLow = parseInt(document.getElementById("sq1_low").innerHTML);
     total.push(oneLow);
     showTotal();
+
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq1_low(item) {
@@ -33,6 +65,7 @@ function unselected_sq1_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_sq1_Normal(item) {
@@ -43,6 +76,7 @@ function select_sq1_Normal(item) {
     var oneLow = parseInt(document.getElementById("sq1_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq1_Normal(item) {
@@ -58,6 +92,7 @@ function unselected_sq1_Normal(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_sq1_High(item) {
@@ -68,6 +103,7 @@ function select_sq1_High(item) {
     var oneHigh = parseInt(document.getElementById("sq1_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq1_High(item) {
@@ -83,6 +119,7 @@ function unselected_sq1_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // squat two --------------------------------------------------------------------------------------------------
@@ -95,6 +132,7 @@ function select_sq2_low(item) {
     var oneLow = parseInt(document.getElementById("sq2_low").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq2_low(item) {
@@ -110,6 +148,7 @@ function unselected_sq2_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_sq2_Normal(item) {
@@ -120,6 +159,7 @@ function select_sq2_Normal(item) {
     var oneLow = parseInt(document.getElementById("sq2_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq2_Normal(item) {
@@ -135,6 +175,7 @@ function unselected_sq2_Normal(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_sq2_High(item) {
@@ -145,6 +186,7 @@ function select_sq2_High(item) {
     var oneHigh = parseInt(document.getElementById("sq2_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq2_High(item) {
@@ -160,6 +202,7 @@ function unselected_sq2_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // squat three ---------------------------------------------------------------------------------------
@@ -172,6 +215,7 @@ function select_sq3_low(item) {
     var oneLow = parseInt(document.getElementById("sq3_low").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq3_low(item) {
@@ -187,6 +231,7 @@ function unselected_sq3_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_sq3_Normal(item) {
@@ -197,6 +242,7 @@ function select_sq3_Normal(item) {
     var oneLow = parseInt(document.getElementById("sq3_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq3_Normal(item) {
@@ -212,6 +258,7 @@ function unselected_sq3_Normal(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_sq3_High(item) {
@@ -222,6 +269,7 @@ function select_sq3_High(item) {
     var oneHigh = parseInt(document.getElementById("sq3_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_sq3_High(item) {
@@ -237,6 +285,7 @@ function unselected_sq3_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // bnuat one --------------------------------------------------------------------
@@ -248,6 +297,7 @@ function select_bn1_low(item) {
     var oneLow = parseInt(document.getElementById("bn1_low").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn1_low(item) {
@@ -263,6 +313,7 @@ function unselected_bn1_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_bn1_Normal(item) {
@@ -273,6 +324,7 @@ function select_bn1_Normal(item) {
     var oneLow = parseInt(document.getElementById("bn1_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn1_Normal(item) {
@@ -288,6 +340,7 @@ function unselected_bn1_Normal(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_bn1_High(item) {
@@ -298,6 +351,7 @@ function select_bn1_High(item) {
     var oneHigh = parseInt(document.getElementById("bn1_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn1_High(item) {
@@ -313,6 +367,7 @@ function unselected_bn1_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // bnuat two --------------------------------------------------------------------------------------------------
@@ -325,6 +380,7 @@ function select_bn2_low(item) {
     var oneLow = parseInt(document.getElementById("bn2_low").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn2_low(item) {
@@ -340,6 +396,7 @@ function unselected_bn2_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_bn2_Normal(item) {
@@ -350,6 +407,7 @@ function select_bn2_Normal(item) {
     var oneLow = parseInt(document.getElementById("bn2_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn2_Normal(item) {
@@ -365,6 +423,7 @@ function unselected_bn2_Normal(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_bn2_High(item) {
@@ -375,6 +434,7 @@ function select_bn2_High(item) {
     var oneHigh = parseInt(document.getElementById("bn2_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn2_High(item) {
@@ -390,6 +450,7 @@ function unselected_bn2_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // bnuat three ---------------------------------------------------------------------------------------
@@ -402,6 +463,8 @@ function select_bn3_low(item) {
     var oneLow = parseInt(document.getElementById("bn3_low").innerHTML);
     total.push(oneLow);
     showTotal();
+
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn3_low(item) {
@@ -417,6 +480,7 @@ function unselected_bn3_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_bn3_Normal(item) {
@@ -427,6 +491,7 @@ function select_bn3_Normal(item) {
     var oneLow = parseInt(document.getElementById("bn3_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn3_Normal(item) {
@@ -441,7 +506,9 @@ function unselected_bn3_Normal(item) {
             total.splice(i, 1);
         }
     }
+
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_bn3_High(item) {
@@ -452,6 +519,7 @@ function select_bn3_High(item) {
     var oneHigh = parseInt(document.getElementById("bn3_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_bn3_High(item) {
@@ -467,6 +535,7 @@ function unselected_bn3_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // dluat one --------------------------------------------------------------------
@@ -478,6 +547,7 @@ function select_dl1_low(item) {
     var oneLow = parseInt(document.getElementById("dl1_low").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl1_low(item) {
@@ -493,6 +563,7 @@ function unselected_dl1_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_dl1_Normal(item) {
@@ -503,6 +574,7 @@ function select_dl1_Normal(item) {
     var oneLow = parseInt(document.getElementById("dl1_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl1_Normal(item) {
@@ -517,7 +589,9 @@ function unselected_dl1_Normal(item) {
             total.splice(i, 1);
         }
     }
+
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_dl1_High(item) {
@@ -528,6 +602,7 @@ function select_dl1_High(item) {
     var oneHigh = parseInt(document.getElementById("dl1_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl1_High(item) {
@@ -543,6 +618,7 @@ function unselected_dl1_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // dluat two --------------------------------------------------------------------------------------------------
@@ -555,6 +631,7 @@ function select_dl2_low(item) {
     var oneLow = parseInt(document.getElementById("dl2_low").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl2_low(item) {
@@ -570,6 +647,7 @@ function unselected_dl2_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_dl2_Normal(item) {
@@ -580,6 +658,7 @@ function select_dl2_Normal(item) {
     var oneLow = parseInt(document.getElementById("dl2_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl2_Normal(item) {
@@ -595,6 +674,7 @@ function unselected_dl2_Normal(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_dl2_High(item) {
@@ -605,6 +685,7 @@ function select_dl2_High(item) {
     var oneHigh = parseInt(document.getElementById("dl2_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl2_High(item) {
@@ -620,6 +701,7 @@ function unselected_dl2_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 // dluat three ---------------------------------------------------------------------------------------
@@ -632,6 +714,7 @@ function select_dl3_low(item) {
     var oneLow = parseInt(document.getElementById("dl3_low").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl3_low(item) {
@@ -647,6 +730,7 @@ function unselected_dl3_low(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_dl3_Normal(item) {
@@ -657,6 +741,7 @@ function select_dl3_Normal(item) {
     var oneLow = parseInt(document.getElementById("dl3_Normal").innerHTML);
     total.push(oneLow);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl3_Normal(item) {
@@ -672,6 +757,7 @@ function unselected_dl3_Normal(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function select_dl3_High(item) {
@@ -682,6 +768,7 @@ function select_dl3_High(item) {
     var oneHigh = parseInt(document.getElementById("dl3_High").innerHTML);
     total.push(oneHigh);
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function unselected_dl3_High(item) {
@@ -697,6 +784,7 @@ function unselected_dl3_High(item) {
         }
     }
     showTotal();
+    document.getElementById("wilks").innerHTML = swilks * (showTotal() / 2.2);
 }
 
 function oneRepMax(rep, weight, rpe) {
@@ -751,9 +839,7 @@ function savaData() {
 
 function loadData() {
     // bodyweight
-    document.getElementById("bodyweight").innerHTML = localStorage.getItem(
-        "bodyweight"
-    );
+    document.getElementById("bodyweight").innerHTML = bw;
 
     // gender
     document.getElementById("gender").innerHTML = localStorage.getItem(
