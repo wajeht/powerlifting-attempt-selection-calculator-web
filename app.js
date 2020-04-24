@@ -1,3 +1,17 @@
+var sq_1st_attempt = document.getElementsByClassName("sq_1st_attempt");
+var sq_2nd_attempt = document.getElementsByClassName("sq_2nd_attempt");
+var sq_3rd_attempt = document.getElementsByClassName("sq_3rd_attempt");
+
+function selected(item) {
+    item.style.backgroundColor = "#c82c33";
+    item.style.color = "white";
+}
+
+function unselected(item) {
+    item.style.backgroundColor = "#fff";
+    item.style.color = "black";
+}
+
 function oneRepMax(rep, weight, rpe) {
     return weight * (10 - (rpe + 1) + rep) * 0.03 + weight;
 }
