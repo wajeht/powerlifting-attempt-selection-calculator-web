@@ -36,4 +36,4 @@ I was inspired by the guides for a perfect attempt selectoin based on the guidel
 
 ## License
 
-MIT © [Kyaw Nyein](https://www.wajeht.github.io/)
+MIT © [Kyaw Nyein](https://wajeht.github.io/)
