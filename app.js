@@ -1001,7 +1001,7 @@ function loadData() {
         parseInt(localStorage.getItem("bn_weight")),
         parseInt(localStorage.getItem("bn_rpe"))
     );
-    document.getElementById("bn_1RM").innerHTML = "SQUAT e1RM: " + bn_1RM;
+    document.getElementById("bn_1RM").innerHTML = "BENCH e1RM: " + bn_1RM;
 
     // declaring bench attempt
     var bn1_attempt = firstAttempt(bn_1RM);
@@ -1041,7 +1041,7 @@ function loadData() {
         parseInt(localStorage.getItem("dl_weight")),
         parseInt(localStorage.getItem("dl_rpe"))
     );
-    document.getElementById("dl_1RM").innerHTML = "SQUAT e1RM: " + dl_1RM;
+    document.getElementById("dl_1RM").innerHTML = "DEADLIFT e1RM: " + dl_1RM;
 
     // declaring deadlift attempt
     var dl1_attempt = firstAttempt(dl_1RM);
