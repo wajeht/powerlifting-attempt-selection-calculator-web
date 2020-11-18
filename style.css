@@ -9,6 +9,18 @@ body {
     -webkit-user-select: none; /* Chrome, Safari, and Opera */
     -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
+
+.privacy {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 30px auto;
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+}
+
 .main {
     background-color: #fff;
     margin: auto;
@@ -285,6 +297,10 @@ td {
         float: left;
         width: 25%;
     }
+
+    .privacy {
+        width: auto;
+    }
     .col-input {
         float: right;
         width: 75%;
@@ -308,6 +324,10 @@ td {
         float: right;
         width: 75%;
     }
+
+    .privacy {
+        width: auto;
+    }
     .footer-image {
         width: 110px;
     }
@@ -327,6 +347,10 @@ td {
 
     .main-result {
         width: 350px;
+    }
+
+    .privacy {
+        width: auto;
     }
 
     input {
@@ -359,6 +383,9 @@ td {
         left: 50%;
         transform: translate(-50%, 1.5%);
         -webkit-appearance: none;
+    }
+    .privacy {
+        width: auto;
     }
 
     .main {
