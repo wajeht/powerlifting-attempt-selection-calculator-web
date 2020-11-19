@@ -3,7 +3,10 @@
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/platform-ios%20-green"> <img src="https://img.shields.io/badge/platform-android%20-green"> <img src="https://img.shields.io/badge/platform-web%20-green">
+    <a href="https://github.com/wajeht/ios_attempt_calculator" alt="Contributors">
+        <img src="https://img.shields.io/badge/platform-ios%20-green" /></a><a href="https://github.com/wajeht/android_attempt_calculator" alt="Contributors">
+        <img src="https://img.shields.io/badge/platform-android%20-green" /></a>
+
 </center>
 ‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎
 
