@@ -1,13 +1,14 @@
 <p align="center"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/logo.png" width="400"></p>
 
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
-<center>
+
+<p align="center">
 <img src="https://img.shields.io/badge/platform-ios%20-green"><img src="https://img.shields.io/badge/platform-android%20-green"><img src="https://img.shields.io/badge/platform-web%20-green">
 </center>
 ‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎
 
 This website is designed to take your heaviest lift within 1-2 weeks before the competition, and calculate attempt selection based on that. Nothing more, nothing less!
- d
+d
 [Click here to visit](https://www.attemptcalculator.com/)<br>
 
 # Motivation
@@ -30,25 +31,26 @@ Everything was built using native technoloy. No frameworks!
 -   AlertifyJs
 
 # Development
-- ``$ git clone <this repo>``
-- start developing in any code editor you want
+
+-   `$ git clone <this repo>`
+-   start developing in any code editor you want
 
 I also have this project in both Android and iOS on my github. Check them out below.
-- [Android](https://github.com/wajeht/android_attempt_calculator)
-- [iOS](https://github.com/wajeht/ios_attempt_calculator)
+
+-   [Android](https://github.com/wajeht/android_attempt_calculator)
+-   [iOS](https://github.com/wajeht/ios_attempt_calculator)
 
 # Contribute
 
 Let me know if you would contribute into this projects. Fork it and work on it on your own branch. Send me a pull request after. I will merge it.
 
-- fork this repo
-- make new branch
-- send pull request
+-   fork this repo
+-   make new branch
+-   send pull request
 
 # Download
 
 [<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/googleplay.png" width="100">](https://play.google.com/store/apps/details?id=com.jawstrength.powerliftingattemptselectioncalculator)‏‎ ‎‏‎ ‎‏‎ ‎‏[<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/apple.png" width="100">](https://apps.apple.com/us/app/powerlifting-attempt-calculatr/id1540891589)
-
 
 # License
 
