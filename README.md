@@ -1,10 +1,10 @@
-<p align="center"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/logo.png" width="400"></p>
+<p align="center"><a href="https://www.attemptcalculator.com/"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/logo.png" width="400"></a></p>
 
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
 
 <p align="center">
-    <a href="https://github.com/wajeht/ios_attempt_calculator" alt="Contributors">
-        <img src="https://img.shields.io/badge/platform-ios%20-green" /></a><a href="https://github.com/wajeht/android_attempt_calculator" alt="Contributors">
+    <a href="https://github.com/wajeht/ios_attempt_calculator">
+        <img src="https://img.shields.io/badge/platform-ios%20-green" /></a><a href="https://github.com/wajeht/android_attempt_calculator">
         <img src="https://img.shields.io/badge/platform-android%20-green" /></a>
 
 </center>
