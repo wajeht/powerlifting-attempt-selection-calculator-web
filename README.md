@@ -3,7 +3,7 @@
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/platform-ios%20-green"><img src="https://img.shields.io/badge/platform-android%20-green"><img src="https://img.shields.io/badge/platform-web%20-green">
+<img src="https://img.shields.io/badge/platform-ios%20-green"> <img src="https://img.shields.io/badge/platform-android%20-green"> <img src="https://img.shields.io/badge/platform-web%20-green">
 </center>
 ‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎
 
