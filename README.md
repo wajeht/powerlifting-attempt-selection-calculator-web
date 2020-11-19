@@ -2,14 +2,12 @@
 
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
 <center>
-<img src="https://img.shields.io/badge/platform-ios%20-green">
-<img src="https://img.shields.io/badge/platform-android%20-green">
-<img src="https://img.shields.io/badge/platform-web%20-green">
+<img src="https://img.shields.io/badge/platform-ios%20-green"><img src="https://img.shields.io/badge/platform-android%20-green"><img src="https://img.shields.io/badge/platform-web%20-green">
 </center>
 ‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎
 
 This website is designed to take your heaviest lift within 1-2 weeks before the competition, and calculate attempt selection based on that. Nothing more, nothing less!
-
+ d
 [Click here to visit](https://www.attemptcalculator.com/)<br>
 
 # Motivation
