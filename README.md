@@ -32,6 +32,11 @@ Everything was built using native technoloy. No frameworks!
 
 Let me know if you would contribute into this projects. Fork it and work on it on your own branch. Send me a pull request after. I will merge it.
 
+# Download
+
+[<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/googleplay.png" width="100">](https://play.google.com/store/apps/details?id=com.jawstrength.powerliftingattemptselectioncalculator)‏‎ ‎‏‎ ‎‏‎ ‎‏[<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/apple.png" width="100">](https://apps.apple.com/us/app/powerlifting-attempt-calculatr/id1540891589)
+
+
 # License
 
 MIT © [wajeht](https://www.github.com/wajeht/)
