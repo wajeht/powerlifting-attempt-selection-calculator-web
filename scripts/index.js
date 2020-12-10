@@ -6,13 +6,27 @@ var swilks = wilks(bw);
 const date = new Date();
 const currentHour = date.getHours();
 
-console.log("current time is ", currentHour);
+const button = document.getElementById('button');
+const main = document.getElementById('main');
+const form = document.querySelector('form');
+const formElements = form.elements;
 
 window.addEventListener('DOMContentLoaded', () => {
-        // between 6pm and 6am
-    if (currentHour => 18 && currentHour <= 6) {
-        document.body.style.backgroundColor = '#000000';
-        console.log("night night");
+    // between 6pm and 6am
+    if ((currentHour) => 18 && currentHour <= 6) {
+        document.body.style.backgroundColor = '#1C1C1C';
+        main.style.backgroundColor = '#282828';
+        document.body.style.color = '#E4E4E4';
+
+        for (let i = 0; i < formElements.length; i++) {
+            formElements[i].style.backgroundColor = '#252A2B';
+            formElements[i].style.color = '#DDDAD6';
+            formElements[i].style.borderColor = '#7B7265';
+
+            if (button) {
+                button.style.backgroundColor = '#D64040';
+            }
+        }
     }
 });
 
