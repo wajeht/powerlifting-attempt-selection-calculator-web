@@ -23,8 +23,8 @@
 </head>
 
 <body onload="loadData()">
-	<div class="main-result">
-		<div class="table-container">
+	<div class="main-result" id="main">
+		<div class="table-container" id="sqtable-container">
 			<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
 				<caption>
 					<div id="sq_1RM">SQUAT e1RM: 000</div>
@@ -84,7 +84,7 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="table-container">
+		<div class="table-container" id="bntable-container">
 			<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
 				<caption>
 					<div id="bn_1RM">BENCH e1RM: 000</div>
@@ -145,7 +145,7 @@
 			</table>
 		</div>
 		<!--deadlift-->
-		<div class="table-container">
+		<div class="table-container" id="dltable-container">
 			<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
 				<caption>
 					<div id="dl_1RM">DEADLIFT e1RM: 000</div>
@@ -205,10 +205,10 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="table-container">
+		<div class="table-container" id="infotable-container">
 			<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
 				<caption>
-					LIFTER'S INFO
+					<div id="lifter_info">LIFTER INFO</div>
 				</caption>
 				<tbody>
 					<tr>
@@ -268,7 +268,8 @@
 				<div class="tooltip">
 					<img alt="Get it on google play" class="footer-image" src="./images/googleplay.png"> <span
 						class="tooltiptext">Get it on the google play!</span>
-				</div></a> <a href="https://apps.apple.com/us/app/powerlifting-attempt-calculatr/id1540891589">
+				</div>
+			</a> <a href="https://apps.apple.com/us/app/powerlifting-attempt-calculatr/id1540891589">
 				<div class="tooltip">
 					<img alt="Download on the AppStore" class="footer-image" src="./images/apple.png"> <span
 						class="tooltiptext">Download on the AppStore</span>
@@ -277,4 +278,5 @@
 		</div>
 </body>
 <script src="scripts/index.js"></script>
+
 </html>

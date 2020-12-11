@@ -13,11 +13,10 @@ const formElements = form.elements;
 
 window.addEventListener('DOMContentLoaded', () => {
     // between 6pm and 6am
-    if (((currentHour) => 6) && currentHour <= 18) {
+    if ((currentHour) => 6 && currentHour <= 18) {
         document.body.style.backgroundColor = '#1C1C1C';
         main.style.backgroundColor = '#282828';
-        document.body.style.color = '#E4E4E4';
-
+        document.body.style.color = '#C8C3BB';
         for (let i = 0; i < formElements.length; i++) {
             formElements[i].style.backgroundColor = '#252A2B';
             formElements[i].style.color = '#DDDAD6';
@@ -29,6 +28,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+const rp = document.getElementById('resultPage');
+
+if (rp != null) {
+    console.log('hi');
+}
 
 function showTotal() {
     var max = 0;
@@ -867,6 +872,32 @@ function savaData() {
 }
 
 function loadData() {
+    if ((currentHour) => 6 && currentHour <= 18) {
+        const main = document.getElementById('main');
+        const sqContainer = document.getElementById('sqtable-container');
+        const bnContainer = document.getElementById('bntable-container');
+        const dlContainer = document.getElementById('dltable-container');
+        const infoContainer = document.getElementById('infotable-container');
+
+        const resultHeader = [
+            document.getElementById('sq_1RM'),
+            document.getElementById('bn_1RM'),
+            document.getElementById('dl_1RM'),
+            document.getElementById('lifter_info'),
+        ];
+
+        for (let i of resultHeader) {
+            i.style.color = '#DDDAD6';
+        }
+
+        main.style.backgroundColor = '#282828';
+        document.body.style.backgroundColor = '#1C1C1C';
+        sqContainer.style.backgroundColor = '#3B3B3B';
+        bnContainer.style.backgroundColor = '#3B3B3B';
+        dlContainer.style.backgroundColor = '#3B3B3B';
+        infoContainer.style.backgroundColor = '#3B3B3B';
+        document.body.style.color = '#C8C3BB';
+    }
     // bodyweight
     document.getElementById('bodyweight').innerHTML = bw;
 
