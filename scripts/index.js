@@ -878,6 +878,11 @@ function loadData() {
         const bnContainer = document.getElementById('bntable-container');
         const dlContainer = document.getElementById('dltable-container');
         const infoContainer = document.getElementById('infotable-container');
+        const white = document.getElementsByClassName('white-out');
+
+        for (let w of white) {
+            w.style.color = '#3B3B3B';
+        }
 
         const resultHeader = [
             document.getElementById('sq_1RM'),
