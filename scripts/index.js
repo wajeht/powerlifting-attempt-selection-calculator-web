@@ -13,7 +13,7 @@ const formElements = form.elements;
 
 window.addEventListener('DOMContentLoaded', () => {
     // between 6pm and 6am
-    if ((currentHour) => 18 && currentHour <= 6) {
+    if (((currentHour) => 6) && currentHour <= 18) {
         document.body.style.backgroundColor = '#1C1C1C';
         main.style.backgroundColor = '#282828';
         document.body.style.color = '#E4E4E4';
