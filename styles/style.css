@@ -1,7 +1,7 @@
 body {
-    background: #E2E1E0;
+    background: #e2e1e0;
+    overflow-y: hidden;
     padding: 10px 20px;
-
     font-family: Arial, Helvetica, sans-serif;
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer */
@@ -34,8 +34,7 @@ body {
     padding-right: 20px;
     border-radius: 10px;
 
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .top {
     width: 100%;
@@ -91,7 +90,7 @@ body {
     width: 80%;
 }
 .row:after {
-    content: "";
+    content: '';
     display: table;
     clear: fixed;
 }
@@ -104,6 +103,7 @@ body {
     text-align: center;
 }
 input {
+    overflow-y: hidden;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -114,9 +114,10 @@ input {
     text-align: center;
     font-family: sans-serif;
 }
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+    overflow-y: hidden;
     background-color: #c82c33;
     color: white;
     padding: 0px 20px;
@@ -146,7 +147,7 @@ input[type="reset"] {
 :-ms-input-placeholder {
     text-align: center;
 }
-.radio input[type="radio"] {
+.radio input[type='radio'] {
     display: none;
 }
 .radio label {
@@ -154,7 +155,7 @@ input[type="reset"] {
     border-radius: 10px;
     cursor: pointer;
 }
-.radio input[type="radio"]:checked + label {
+.radio input[type='radio']:checked + label {
     background-color: #c82c33;
     color: white;
     border-radius: 10px;
@@ -223,7 +224,7 @@ td {
     padding-right: 20px;
     border-radius: 10px;
 
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .tooltip {
     position: relative;
@@ -244,7 +245,7 @@ td {
     margin-left: -60px;
 }
 .tooltip .tooltiptext::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 100%;
     left: 50%;
