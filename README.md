@@ -14,6 +14,10 @@ This website is designed to take your heaviest lift within 1-2 weeks before the 
 d
 [Click here to visit](https://www.attemptcalculator.com/)<br>
 
+# Screenshot
+
+<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_back.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_front.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/white_front.png" width="200">
+
 # Motivation
 
 I built this website intending to share the strategies for selecting attempts for powerlifters. For those of you who could not afford for coaching and some of the athletes that I coach for powerlifting.
