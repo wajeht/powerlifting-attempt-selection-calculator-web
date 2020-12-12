@@ -13,7 +13,7 @@ const formElements = form.elements;
 
 window.addEventListener('DOMContentLoaded', () => {
     // between 6pm and 6am
-    if ((currentHour) => 6 && currentHour <= 18) {
+    if ( currentHour >= 18 && currentHour <= 6) {
         document.body.style.backgroundColor = '#1C1C1C';
         main.style.backgroundColor = '#282828';
         document.body.style.color = '#C8C3BB';
@@ -872,7 +872,7 @@ function savaData() {
 }
 
 function loadData() {
-    if ((currentHour) => 6 && currentHour <= 18) {
+    if ( currentHour >= 18 && currentHour <= 6) {
         const main = document.getElementById('main');
         const sqContainer = document.getElementById('sqtable-container');
         const bnContainer = document.getElementById('bntable-container');
