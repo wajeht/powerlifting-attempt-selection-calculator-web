@@ -16,7 +16,7 @@ d
 
 # Screenshot
 
-<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_back.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_front.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/white_front.png" width="200">
+<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/white_front.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_back.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_front.png" width="200">
 
 # Motivation
 
