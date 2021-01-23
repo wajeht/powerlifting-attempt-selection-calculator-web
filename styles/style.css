@@ -165,7 +165,7 @@ input[type='reset'] {
     position: absolute;
     top: 100%;
     left: 50%;
-    margin: auto;
+    margin-top: 20px;
     transform: translate(-50%, -0%);
     width: auto;
 }
@@ -177,6 +177,10 @@ input[type='reset'] {
 }
 .footer p {
     text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
 }
 .alertify .ajs-dialog {
     top: 25%;
