@@ -13,9 +13,7 @@ const formElements = form.elements;
 
 window.addEventListener('DOMContentLoaded', () => {
     // between 8pm and 6am
-
-    console.log({currentHour: currentHour});
-    if ( currentHour >= 20 || currentHour <= 5) {
+    if (currentHour >= 20 || currentHour <= 5) {
         document.body.style.backgroundColor = '#1C1C1C';
         main.style.backgroundColor = '#282828';
         document.body.style.color = '#C8C3BB';
@@ -30,12 +28,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-const rp = document.getElementById('resultPage');
-
-if (rp != null) {
-    console.log('hi');
-}
 
 function showTotal() {
     var max = 0;
@@ -874,7 +866,7 @@ function savaData() {
 }
 
 function loadData() {
-    if ( currentHour >= 18 && currentHour <= 6) {
+    if (currentHour >= 20 || currentHour <= 5) {
         const main = document.getElementById('main');
         const sqContainer = document.getElementById('sqtable-container');
         const bnContainer = document.getElementById('bntable-container');
