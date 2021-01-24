@@ -12,8 +12,10 @@ const form = document.querySelector('form');
 const formElements = form.elements;
 
 window.addEventListener('DOMContentLoaded', () => {
-    // between 6pm and 6am
-    if ( currentHour >= 18 && currentHour <= 6) {
+    // between 8pm and 6am
+
+    console.log({currentHour: currentHour});
+    if ( currentHour >= 20 || currentHour <= 5) {
         document.body.style.backgroundColor = '#1C1C1C';
         main.style.backgroundColor = '#282828';
         document.body.style.color = '#C8C3BB';
