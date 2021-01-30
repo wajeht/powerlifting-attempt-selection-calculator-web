@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.attemptcalculator.com/"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/logo.png" width="400"></a></p>
+<p align="center"><a href="https://www.attemptcalculator.com/"><img src="https://raw.githubusercontent.com/wajeht/web-powerlifting-attempt-selection-calculator/gh-pages/images/banner.png" width="400"></a></p>
 
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
 
