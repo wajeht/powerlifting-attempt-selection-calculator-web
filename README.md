@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.attemptcalculator.com/"><img src="https://raw.githubusercontent.com/wajeht/web-powerlifting-attempt-selection-calculator/gh-pages/images/banner.png" width="400"></a></p>
+<p align="center"><a href="https://attempt-calculator.jaw.dev/"><img src="https://raw.githubusercontent.com/wajeht/powerlifting-attempt-selection-calculator-web/main/src/images/banner.png" width="400"></a></p>
 
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
 
@@ -20,7 +20,7 @@ This codebase is no longer actively maintained. The package will continue workin
 
 # 🖼️ Screenshot
 
-<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/white_front.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_back.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/screenshots/dark_front.png" width="200">
+<img src="https://raw.githubusercontent.com/wajeht/powerlifting-attempt-selection-calculator-web/main/.github/screenshots/dark_back.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/powerlifting-attempt-selection-calculator-web/main/.github/screenshots/dark_front.png" width="200"><img src="https://raw.githubusercontent.com/wajeht/powerlifting-attempt-selection-calculator-web/main/.github/screenshots/white_front.png" width="200">
 
 # Motivation
 
@@ -44,6 +44,7 @@ Everything was built using native technology. No frameworks!
 # 👨‍💻 Development
 
 - `$ git clone <this repo>`
+- `$ npm run dev`
 - start developing in any code editor you want
 
 I also have this project in both Android and iOS on my github. Check them out below.
@@ -53,15 +54,17 @@ I also have this project in both Android and iOS on my github. Check them out be
 
 # 👥 Contribute
 
-Let me know if you would contribute into this projects. Fork it and work on it on your own branch. Send me a pull request after. I will merge it.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-- fork this repo
-- make new branch
-- send pull request
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
 # 📱 Download
 
-[<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/googleplay.png" width="100">](https://play.google.com/store/apps/details?id=com.jawstrength.powerliftingattemptselectioncalculator) ‎‏[<img src="https://raw.githubusercontent.com/wajeht/web_attempt_calculator/gh-pages/images/apple.png" width="100">](https://apps.apple.com/us/app/powerlifting-attempt-calculatr/id1540891589)
+[<img src="https://raw.githubusercontent.com/wajeht/powerlifting-attempt-selection-calculator-web/main/src/images/googleplay.png" width="100">](https://play.google.com/store/apps/details?id=com.jawstrength.powerliftingattemptselectioncalculator) ‎‏[<img src="https://raw.githubusercontent.com/wajeht/powerlifting-attempt-selection-calculator-web/main/src/images/apple.png" width="100">](https://apps.apple.com/us/app/powerlifting-attempt-calculatr/id1540891589)
 
 # ©️ License
 

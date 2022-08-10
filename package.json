@@ -1,0 +1,23 @@
+{
+  "name": "powerlifting-attempt-selection-calculator-web",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><a href=\"https://www.attemptcalculator.com/\"><img src=\"https://raw.githubusercontent.com/wajeht/web-powerlifting-attempt-selection-calculator/gh-pages/images/banner.png\" width=\"400\"></a></p>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wajeht/powerlifting-attempt-selection-calculator-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wajeht/powerlifting-attempt-selection-calculator-web/issues"
+  },
+  "homepage": "https://github.com/wajeht/powerlifting-attempt-selection-calculator-web#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

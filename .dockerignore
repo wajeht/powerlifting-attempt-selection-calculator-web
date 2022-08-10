@@ -3,3 +3,5 @@
 .prettierrc
 LICENSE
 README.md
+.github
+node_modules
