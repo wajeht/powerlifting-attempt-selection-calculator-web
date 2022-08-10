@@ -3,8 +3,8 @@
 # <p align="center">Powerlifting Meet Attempt Selection Calculator</p>
 
 <p align="center">
-    <a href="https://github.com/wajeht/ios_attempt_calculator">
-        <img src="https://img.shields.io/badge/platform-ios%20-green" /></a><a href="https://github.com/wajeht/android_attempt_calculator">
+    <a href="https://github.com/wajeht/powerlifting-attempt-selection-calculator-android">
+        <img src="https://img.shields.io/badge/platform-ios%20-green" /></a><a href="https://github.com/wajeht/powerlifting-attempt-selection-calculator-ios">
         <img src="https://img.shields.io/badge/platform-android%20-green" /></a>
 
 </center>
@@ -49,8 +49,8 @@ Everything was built using native technology. No frameworks!
 
 I also have this project in both Android and iOS on my github. Check them out below.
 
-- [Android](https://github.com/wajeht/android_attempt_calculator)
-- [iOS](https://github.com/wajeht/ios_attempt_calculator)
+- [Android](https://github.com/wajeht/powerlifting-attempt-selection-calculator-android)
+- [iOS](https://github.com/wajeht/powerlifting-attempt-selection-calculator-ios)
 
 # 👥 Contribute
 
